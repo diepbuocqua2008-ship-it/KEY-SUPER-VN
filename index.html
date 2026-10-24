@@ -70,5 +70,9 @@ function openCheckout(){closeModal('cartModal');renderCart();if(!total()){alert(
 function closeModal(id){document.getElementById(id).classList.remove('show')}
 function demoPay(){let email=document.getElementById('email').value.trim();if(!email||!email.includes('@'))return alert('Vui lòng nhập email hợp lệ.');alert('Đã mô phỏng tạo đơn hàng. Chưa có giao dịch thật và chưa giao key. Hãy tích hợp backend/cổng thanh toán trước khi đưa website vào hoạt động.');closeModal('checkoutModal')}
 document.getElementById('search').addEventListener('input',renderProducts);document.getElementById('sort').addEventListener('change',renderProducts);renderProducts();renderCart();
+powershell
+npm install
+Copy-Item .env.example .env
+npm run dev
 </script>
 </body></html>
